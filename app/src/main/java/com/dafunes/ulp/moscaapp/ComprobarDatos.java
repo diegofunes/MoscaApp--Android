@@ -154,84 +154,6 @@ public class ComprobarDatos extends AppCompatActivity implements DialogoParaForm
 
     }//Fin onCreate
 
-    /*public Connection conexionBD(){
-        Connection conexion=null;
-        try{
-            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder(  ).permitAll().build();
-            StrictMode.setThreadPolicy( policy );
-            Class.forName( "net.sourceforge.jtds.jdbc.Driver" ).newInstance();
-            conexion= DriverManager.getConnection( "jdbc:jtds:sqlserver://192.168.112.168:1433/MoscaDeLosFrutos;user=UsrMoscaFrutos;password=mosca543;" );
-
-        }catch (Exception e){
-            Toast.makeText(getApplicationContext(),e.getMessage(),Toast.LENGTH_SHORT).show();
-
-        }
-        return conexion;
-    }*/
-
-   /*public void agregarReg(){
-        miAllForms = miDbHelper.getAllForms();
-
-        String formcod;
-        String formcor;
-        String formfec;
-        String formhor;
-        String formlat;
-        String formlng;
-        String formobs;
-        String formest="A";
-        String fechhor;
-
-
-        for (Formulario aForm : miAllForms) {
-
-            formcod= aForm.getCodigoqr();
-            formcor= aForm.getCorreo();
-            formfec= aForm.getFecha();
-            formlat= aForm.getLatitud();
-            formlng= aForm.getLongitud();
-            formhor= aForm.getHora();
-            formobs=aForm.getObs();
-
-
-            Statement st;
-            try{
-                PreparedStatement pst=conexionBD().prepareStatement( "insert into mos_tes (campo1,campo2)VALUES(1,'Prueba')" );
-
-                pst.setString( 1,formcod.toString() );
-                pst.setString( 2,formcor.toString() );
-                pst.setString( 3,formlat.toString() );
-                pst.setString( 4,formlng.toString() );
-                pst.setString( 5,formhor.toString() );
-                pst.setString( 6,formobs.toString() );
-                pst.setString( 7,formfec.toString() );
-
-                pst.executeUpdate();
-
-
-                Toast.makeText(getApplicationContext(),"REGISTRO AGEGADO CORRECTAMENTE",Toast.LENGTH_SHORT).show();
-
-            }catch(SQLException e) {
-
-                Toast.makeText(getApplicationContext(),e.getMessage(),Toast.LENGTH_SHORT).show();
-
-            }
-
-
-        }
-
-        try{
-           PreparedStatement pst=conexionBD().prepareStatement( "insert into MOS_VISITAS_MOBILE (IMEI,QR,FECHA) values('12345678','A12345','12/07/2018')" );
-            pst.executeUpdate();
-
-            Toast.makeText(getApplicationContext(),"REGISTRO AGREGADO CORRECTAMENTE",Toast.LENGTH_SHORT).show();
-
-        }catch(SQLException e) {
-            Toast.makeText(getApplicationContext(),e.getMessage(),Toast.LENGTH_SHORT).show();
-        }
-
-    }*/
-
 //clase conectar
 
     @Override
@@ -509,10 +431,10 @@ public class ComprobarDatos extends AppCompatActivity implements DialogoParaForm
         @Override
         protected Boolean doInBackground(Void... params) {
 
-            final String NAMESPACE = "http://sanluismosca";
-            final String URL= "http://10.0.2.2:5303/ServicioClientes.asmx";
+            final String NAMESPACE = "namespace";
+            final String URL= "url";
             final String METHOD_NAME = "Insertar";
-            final String SOAP_ACTION = "http://sanluismosca/Insertar";
+            final String SOAP_ACTION = "namespace/Insertar";
 
             SoapObject request = new SoapObject(NAMESPACE, METHOD_NAME);
 
