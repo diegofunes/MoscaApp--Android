@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etcodigoqr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/códigoqr"
+        android:inputType="" />
+    <EditText
+        android:id="@+id/etcorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/correo"
+        android:inputType="" />
+    <EditText
+        android:id="@+id/etlat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/latitud"
+        android:inputType="" />
+    <EditText
+        android:id="@+id/etlong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/longitud"
+        android:inputType="" />
+    <EditText
+        android:id="@+id/etfecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/fecha"
+        android:inputType="" />
+    <EditText
+        android:id="@+id/ethora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hora"
+        android:inputType="" />
+    <EditText
+        android:id="@+id/etobs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/observaciones"
+        android:inputType="" />
+
+</LinearLayout>

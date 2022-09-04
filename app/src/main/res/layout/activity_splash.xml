@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/darkgrey"
+    tools:context="com.dafunes.ulp.moscaapp.Splash">
+
+
+        <ImageView
+            android:id="@+id/ivSplash"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/splash"
+            android:contentDescription="@string/content_splash"/>
+
+        <TextView
+            android:id="@+id/tvSplash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivSplash"
+            android:layout_centerHorizontal="true"
+            android:text="@string/gobierno_de_san_luis"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+</RelativeLayout>
